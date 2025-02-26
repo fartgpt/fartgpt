@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FartGPT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="logo.png" alt="FartGPT Logo" class="logo">
+            <h1>FartGPT</h1>
+            <button id="toggle-sidebar"><i class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Menü Öğeleri -->
+        <div class="sidebar-menu">
+            <div class="menu-item" id="cto">
+                <i class="fas fa-user-secret"></i>
+                <span>CTO</span>
+            </div>
+            <div class="menu-item" id="history">
+                <i class="fas fa-book-open"></i>
+                <span>Our History</span>
+            </div>
+            <div class="menu-item" id="economics">
+                <i class="fas fa-chart-pie"></i>
+                <span>Farteconomics</span>
+            </div>
+            <div class="menu-item" id="buy">
+                <i class="fas fa-shopping-cart"></i>
+                <span>How to Buy?</span>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <div class="platform-links">
+                <a href="https://x.com/fartgpt_cto" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://t.me/ctofartgpt" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.tiktok.com/@fartgpt_sol" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/fartgpt_sol" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://dexscreener.com/solana/3zufc6a9plmvzdpk6adpib9vxdndqk9h7nscdnmasbxz?maker=4SxTE5ZCu2LLW6BU7S78ZkABhW2Hu5JkX3LPHCtMHVCK" target="_blank"><i class="fas fa-chart-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Chat Box -->
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I'm FartGPT. How can I assist you today?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-area">
+                <input type="text" 
+                       id="user-input" 
+                       placeholder="send a fart 💨💨💨">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div class="footer-text">
+                AI-generated, powered by Farts.
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="cto-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>CTO</h2>
+            <p>We are the handful of people who have stayed together and never stopped working since the worst days of the project. We never gave up, and we ate as many beans as we could, and kept farting. We’re still farting. We’ll always fart. We will fart. We will fart.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="history-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Our History</h2>
+            <p>At first, everything was great. A well-thought-out website, meme images, videos, a Telegram group, a Twitter account—everything was set up beautifully, and it was really promising. Everyone who saw this started posting to fart, and we joined the project. The day the project launched on pump.fun, everyone believed and bought in; our market cap reached about $1m. Up until this point, DEV was very active, pumping FOMO and giving people hope. But right after this, everything started to go in the opposite direction. The graph started to drop, and DEV's voice faded—he wasn’t farting as much as before. As a community, we worked day and night, but DEV never wanted to help. He didn't even tweet from his account. We waited for about two weeks, hoping things would return to normal, and we never stopped working. Our market cap dropped to about $20k, yet we were still here. And after two intense weeks, DEV said he would shut down the Twitter account, the website, and leave the project. We were already expecting this move from him because he was tying our hands and we couldn’t be the CTO. Now, that asshole is no longer with us, and we’re officially the CTO. We never stopped farting, and we continue to fart.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="economics-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Farteconomics</h2>
+            <p>What economics are you talking about? We are a fart meme (yes, we have a GPT that farts all the time, but it doesn't need to be that serious). There’s no economics, no blah blah. We have enough FartGPT coins to make everyone fart. That’s enough.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="buy-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>How to Buy?</h2>
+            <p>Visit any DEX address and paste this CA into the search bar, or go to the swap section in your wallet and paste this CA into the coin swap field.</p>
+            <div class="contract-box">
+                <code>CA: xMJ9BnMvrpEUrTEihDKSuQUh8J7P89oEQrbuCWWpump</code>
+                <button class="copy-btn"><i class="fas fa-copy"></i></button>
+            </div>
+            <div class="link-buttons">
+                <a href="https://www.dextools.io/app/en/solana/pair-explorer/3ZufC6A9PLmvZdpk6Adpib9VXdNDqK9h7NSCDnmasbxz?t=1740522745445" target="_blank" class="dex-btn">
+                    <i class="fas fa-chart-line"></i> DexTools
+                </a>
+                <a href="https://dexscreener.com/solana/3zufc6a9plmvzdpk6adpib9vxdndqk9h7nscdnmasbxz" target="_blank" class="dex-btn">
+                    <i class="fas fa-search"></i> DexScreener
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
